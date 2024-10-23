@@ -27,8 +27,7 @@ def generate_bp(guideline, query):
     )
 
     answer = response.choices[0].message.content.strip()
-    print(answer)
-    return answer
+    return json.loads(answer)
 
 if __name__ == "__main__":
     with open('params.json', 'r') as f:
