@@ -20,7 +20,7 @@ def generate_bp(guideline, query):
     ]
 
     response = client.chat.completions.create(
-        model="gpt-4o",
+        model="gpt-4o-mini",
         messages=messages,
         temperature=0.0,
         response_format={"type": "json_object"}
